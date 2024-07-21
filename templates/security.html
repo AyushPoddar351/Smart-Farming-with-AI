@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Intruder Alarm
+{% endblock title %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+            <a class="nav-item nav-link active" href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a class="nav-item nav-link" href="{{ url_for('crop_recommend') }}">Crop</a>
+            <a class="nav-item nav-link" href="{{ url_for('fertilizer_recommendation') }}">Fertilizer</a>
+            <a class="nav-item nav-link" href="{{ url_for('security') }}">Security(current)</a>
+            <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h1 class="text-center text-capitalize pt-5" style="font-family: 'Lora', serif;">Intruder Alarm</h1>
+    <hr class="w-25 mx-auto" />
+    <p class="text-center text-capitalize pt-5">The image processing UI is now running. Please check the UI window that has opened.</p>
+</div>
+{% endblock body %}
