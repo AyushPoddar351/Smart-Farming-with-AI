@@ -1,4 +1,4 @@
-Agro Sphere
+Agri Sphere
 This project is an innovative application designed to aid farmers in making informed decisions about crop and fertilizer recommendations and enhancing farm security using AI and machine learning.
 
 Features:
